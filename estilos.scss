@@ -1,0 +1,54 @@
+$color-principal:#8ed3cc;
+$blanco:#ffffff;
+
+.sociales{
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        li{
+            position: relative;
+            display: inline-block;
+            a::before{
+                font-family: 'FontAwesome';
+                display: inline-block;
+                vertical-align: top;
+                padding: 0.4rem;
+                content: '\f08e';
+                -webkit-font-smoothing:antialiased;
+                font-size: 2rem;
+                color: #e082a8;
+            }
+            a[href*='facebook.com']::before{
+                content: '\f082';
+            }
+            a[href*='twitter.com']::before{
+                content: '\f081';
+            }
+            a[href*='instagram.com']::before{
+                content: '\f16d';
+            }
+            a[href*='pinterest.com']::before{
+                content: '\f0d2';
+            }
+            a[href*='youtube.com']::before{
+                content: '\f167';
+            }
+        }
+    }
+}
+
+
+/*Navegacion*/
+.navegacion{
+    background-color:$color-principal;
+    outline: 1px dashed $blanco;
+    .navbar-light .navbar-toggler{
+        background-color: $blanco;
+    }
+    .navbar-brand,.navbar-brand:hover{
+        color: $blanco;
+    }
+    
+}
