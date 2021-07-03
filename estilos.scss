@@ -1,5 +1,10 @@
 $color-principal:#8ed3cc;
+$color-secundario:#bde8dd;
 $blanco:#ffffff;
+$negro:#000000;
+$fuente-1:'Raleway', sans-serif;
+$fuente-2:'Lato', sans-serif;
+$fuente-3:'Italianno', cursive;
 
 .sociales{
     ul{
@@ -43,12 +48,35 @@ $blanco:#ffffff;
 /*Navegacion*/
 .navegacion{
     background-color:$color-principal;
-    outline: 1px dashed $blanco;
     .navbar-light .navbar-toggler{
         background-color: $blanco;
     }
     .navbar-brand,.navbar-brand:hover{
         color: $blanco;
     }
-    
+    .nav-principal{
+        background-image: url(../img/border_horizontal.png),
+            url(../img/border_horizontal.png);
+        background-repeat: repeat-x;
+        background-position: 0px top,0px bottom;
+    }
+    .nav-link{
+        color: $blanco;
+        font-family: $fuente-1;
+        font-size: 1.4rem;
+        transition: all .5s ease-in-out;
+        &:hover{
+            background-color: $color-secundario;
+            color: $negro;
+        }
+    }
+}
+
+.carousel-caption{
+    h3{
+        font-family: $fuente-1;
+        font-size: 2rem;
+        font-weight: 900;
+        color: $blanco;
+    }
 }
