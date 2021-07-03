@@ -5,8 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/4cf4e44bdf.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:ital,wght@0,400;0,700;1,900&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        
     </head>
     <body>
         <!-- Seccion del logo y redes sociales -->
@@ -33,38 +37,83 @@
         <!-- Fin de la seccion del logo y redes sociales -->
 
         <!--Seccion del Menu-->
-        <div class="navegacion">
-          <nav class="nav-principal navbar navbar-expand-md navbar-light bg-faded">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#nav_principal" aria-label="Mostrar navegacion">
-              <span class="navbar-toggler-icon"></span>
-            </button>  
-            
-            <a href="#" class="navbar-brand d-lg-none">Carolina Spa</a>
-            <div class="container">
-              <div class="collapse navbar-collapse w-100" id="nav_principal">
-                <ul class="nav nav-justified w-100 flex-column flex-sm-row">
-                  <li class="nav-item">
-                    <a href="/" class="nav-link">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="" class="nav-link">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="" class="nav-link">Servicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="" class="nav-link">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="" class="nav-link">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+        <div class="navegacion mt-3 py-1">
+            <nav class="nav-principal navbar navbar-expand-md navbar-light bg-faded">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_principal" aria-label="Mostrar navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="#" class="navbar-brand d-lg-none">Carolina Spa</a>
+                <div class="container">
+                    <div class="collapse navbar-collapse w-100" id="nav_principal">
+                        <ul class="nav nav-justified w-100 flex-column flex-sm-row">
+                            <li class="nav-item">
+                                <a href="/" class="nav-link">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Servicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
         <!--Fin de la seccion del Menu-->
+
+        <!--Seccion del slider-->
+        <div class="container">
+            <div id="slider-principal" class="carousel slide mt-4" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#slider-principal" data-slide-to="0" class="active"></li>
+                    <li data-target="#slider-principal" data-slide-to="1"></li>
+                    <li data-target="#slider-principal" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img class="img-fluid d-block" src="img/slide_01.jpg" alt="Nuestras Instalaciones">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="text-uppercase">Nuevas Instalaciones</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid d-block" src="img/slide_02.jpg" alt="Nuestros Servicios">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="text-uppercase">Conoce Nuestros Servicios</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-fluid d-block" src="img/slide_03.jpg" alt="Promociones">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="text-uppercase">Nuevo Sitio Web, 2x1 en todos los servicios</h3>
+                        </div>
+                    </div>
+                </div>
+                <a href="#slider-principal" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" area-hidden="true"></span>
+                    <span class="sr-only">Slider Previo</span>
+                </a>
+                <a href="#slider-principal" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" area-hidden="true"></span>
+                    <span class="sr-only">Slider Siguiente</span>
+                </a>
+            </div>
+            <!--Fin de #slider-Principal-->
+        </div>
+        <!--Fin del container-->
+        <!--Fin seccion del slider-->
+        
+        
+
+
         <script src="js/jquery.slim.js"></script>
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.min.js"></script>
