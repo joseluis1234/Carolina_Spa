@@ -1,11 +1,39 @@
 $color-principal:#8ed3cc;
 $color-secundario:#bde8dd;
+$color-encabezado:#e082a8;
 $blanco:#ffffff;
 $negro:#000000;
+$gris:#979797;
+$color-fondo:#f8f8f8;
 $fuente-1:'Raleway', sans-serif;
 $fuente-2:'Lato', sans-serif;
 $fuente-3:'Italianno', cursive;
 
+
+body{
+    background-color: $color-fondo;
+}
+/*Encabezados*/
+.encabezado{
+    font-family: $fuente-2;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: $negro;
+    span{
+        font-family: $fuente-3;
+        color: $color-encabezado;
+        font-size: 3.8rem;
+    }
+}
+.nuevo-sitio{
+    font-family: $fuente-2;
+    color: $gris;
+    font-size: 1.6rem;
+}
+
+
+
+/*Logo y Redes Sociales*/
 .sociales{
     ul{
         list-style: none;
@@ -23,7 +51,7 @@ $fuente-3:'Italianno', cursive;
                 content: '\f08e';
                 -webkit-font-smoothing:antialiased;
                 font-size: 2rem;
-                color: #e082a8;
+                color:$color-encabezado;
             }
             a[href*='facebook.com']::before{
                 content: '\f082';
@@ -72,11 +100,99 @@ $fuente-3:'Italianno', cursive;
     }
 }
 
+/*Carousel*/
 .carousel-caption{
     h3{
         font-family: $fuente-1;
         font-size: 2rem;
         font-weight: 900;
         color: $blanco;
+    }
+}
+
+/*Servicios cards*/
+.imagen-servicio{
+    img{
+        border: 6px solid $blanco;
+        -webkit-transition: transform .3s ease;       
+        -ms-transition:transform .3s ease;
+        transition: transform .3s ease;
+        &:hover{
+            -webkit-transform: scale(1.2) rotate(10deg);
+            -ms-transform: scale(1.2) rotate(10deg);
+            transform: scale(1.2) rotate(10deg);
+        }
+    }
+}
+
+.servicio-info{
+    background-color: $blanco;
+    margin-top: -5rem;
+    .btn-primary{
+        border-radius: 0;
+        background-color: $color-encabezado;
+        border: none;
+        font-family: $fuente-2;
+        font-size: 1.5rem;
+        &:hover{
+            background-color: $color-principal;
+        }
+    }
+    
+}
+
+/*Seccion Horario*/
+.horario{
+    background-color: $color-principal;
+    color: $blanco;
+    h2{
+        font-size: 2.2rem;
+        font-family: $fuente-2;
+    }
+    .table{
+        border: 3px solid $color-encabezado;
+        thead{
+            background-color: $color-encabezado;
+        }
+        td, thead th{
+            border:none;
+        }
+        tbody tr td{
+            padding: .35rem;
+            font-family: $fuente-2;
+            font-size: 1.2rem;
+        }
+    }
+    .bg-horario{
+        background-image: url(../img/bg_horarios.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        min-height: 400px;
+    }
+}
+
+/*Productos*/
+.productos .card{
+    border: none;
+    a{
+        color: $negro;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .card-title{
+        color: $color-encabezado;
+        font-family: $fuente-2;
+        font-size: 1.2rem;
+    }
+    .card-text{
+        color: $negro;
+        font-family: $fuente-2;
+    }
+    .precio{
+        font-family: $fuente-2;
+        color: $gris;
+        font-size: 1.6rem;   
     }
 }
