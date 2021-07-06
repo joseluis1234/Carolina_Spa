@@ -169,11 +169,54 @@ body {
 .productos .card .card-text {
   color: #000000;
   font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
 }
 .productos .card .precio {
   font-family: "Lato", sans-serif;
   color: #979797;
   font-size: 1.6rem;
+}
+
+/*Citas*/
+.citas {
+  background-image: url(../img/bg_citas.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+}
+@media (min-width: 992px) {
+  .citas {
+    background-size: cover;
+  }
+}
+.citas h3 {
+  font-size: 3.5rem;
+}
+.citas p {
+  line-height: 2.6rem;
+  font-size: 1.2rem;
+}
+.citas a {
+  background-color: #8ed3cc;
+  border: 0;
+  padding: 1rem 5rem;
+  border-radius: 0;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+}
+.citas a:hover {
+  background-color: #69aca5;
+}
+
+/*Footer*/
+.footer-sitio {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+}
+.footer-sitio .copyright {
+  color: #979797;
 }
 
 /*# sourceMappingURL=style.css.map */

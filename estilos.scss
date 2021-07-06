@@ -189,10 +189,50 @@ body{
     .card-text{
         color: $negro;
         font-family: $fuente-2;
+        font-size: .8rem;
     }
     .precio{
         font-family: $fuente-2;
         color: $gris;
         font-size: 1.6rem;   
+    }
+}
+
+/*Citas*/
+.citas{
+    background-image: url(../img/bg_citas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: $blanco;
+    font-family: $fuente-2;
+    @media(min-width:992px) {
+        background-size: cover;
+    }
+    h3{
+        font-size: 3.5rem;
+    }
+    p{
+        line-height: 2.6rem;
+        font-size: 1.2rem;
+    }
+    a{
+        background-color: $color-principal;
+        border: 0;
+        padding: 1rem 5rem;
+        border-radius: 0;
+        font-size: 1.2rem;
+        font-family: $fuente-2;
+        &:hover{
+            background-color: #69aca5;
+        }
+    }
+}
+/*Footer*/
+.footer-sitio{
+    font-family: $fuente-2;
+    font-size: 1rem;
+    .copyright{
+        color: $gris;
     }
 }
