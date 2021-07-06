@@ -1,0 +1,113 @@
+@import 'variables';
+
+body{
+    background-color: $color-fondo;
+}
+/*Encabezados*/
+.encabezado{
+    font-family: $fuente-2;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: $negro;
+    span{
+        font-family: $fuente-3;
+        color: $color-encabezado;
+        font-size: 3.8rem;
+    }
+}
+.nuevo-sitio{
+    font-family: $fuente-2;
+    color: $gris;
+    font-size: 1.6rem;
+}
+
+/*Logo y Redes Sociales*/
+.sociales{
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        li{
+            position: relative;
+            display: inline-block;
+            a::before{
+                font-family: 'FontAwesome';
+                display: inline-block;
+                vertical-align: top;
+                padding: 0.4rem;
+                content: '\f08e';
+                -webkit-font-smoothing:antialiased;
+                font-size: 2rem;
+                color:$color-encabezado;
+            }
+            a[href*='facebook.com']::before{
+                content: '\f082';
+            }
+            a[href*='twitter.com']::before{
+                content: '\f081';
+            }
+            a[href*='instagram.com']::before{
+                content: '\f16d';
+            }
+            a[href*='pinterest.com']::before{
+                content: '\f0d2';
+            }
+            a[href*='youtube.com']::before{
+                content: '\f167';
+            }
+        }
+    }
+}
+
+
+/*Navegacion*/
+.navegacion{
+    background-color:$color-principal;
+    .navbar-light .navbar-toggler{
+        background-color: $blanco;
+    }
+    .navbar-brand,.navbar-brand:hover{
+        color: $blanco;
+    }
+    .nav-principal{
+        background-image: url(../img/border_horizontal.png),
+            url(../img/border_horizontal.png);
+        background-repeat: repeat-x;
+        background-position: 0px top,0px bottom;
+    }
+    .nav-link{
+        color: $blanco;
+        font-family: $fuente-1;
+        font-size: 1.4rem;
+        transition: all .5s ease-in-out;
+        &:hover{
+            background-color: $color-secundario;
+            color: $negro;
+        }
+    }
+}
+
+/*Hero*/
+.hero{
+    position: relative;
+    h2{
+        position: absolute;
+        bottom: 2rem ;
+        right: 0;
+        background-color: $color-principal;
+        color: $blanco;
+        font-family: $fuente-1;
+        font-weight: 900;
+        font-size: 2.8rem;
+    }
+}
+
+/*Footer*/
+.footer-sitio{
+    font-family: $fuente-2;
+    font-size: 1rem;
+    .copyright{
+        color: $gris;
+    }
+}

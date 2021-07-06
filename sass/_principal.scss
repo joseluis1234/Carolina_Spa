@@ -1,0 +1,131 @@
+@import 'variables';
+/*Principal*/
+
+/*Carousel*/
+.carousel-caption{
+    h3{
+        font-family: $fuente-1;
+        font-size: 2rem;
+        font-weight: 900;
+        color: $blanco;
+    }
+}
+
+/*Servicios cards*/
+.imagen-servicio{
+    img{
+        border: 6px solid $blanco;
+        -webkit-transition: transform .3s ease;       
+        -ms-transition:transform .3s ease;
+        transition: transform .3s ease;
+        &:hover{
+            -webkit-transform: scale(1.2) rotate(10deg);
+            -ms-transform: scale(1.2) rotate(10deg);
+            transform: scale(1.2) rotate(10deg);
+        }
+    }
+}
+
+.servicio-info{
+    background-color: $blanco;
+    margin-top: -5rem;
+    .btn-primary{
+        border-radius: 0;
+        background-color: $color-encabezado;
+        border: none;
+        font-family: $fuente-2;
+        font-size: 1.5rem;
+        &:hover{
+            background-color: $color-principal;
+        }
+    }
+    
+}
+
+/*Seccion Horario*/
+.horario{
+    background-color: $color-principal;
+    color: $blanco;
+    h2{
+        font-size: 2.2rem;
+        font-family: $fuente-2;
+    }
+    .table{
+        border: 3px solid $color-encabezado;
+        thead{
+            background-color: $color-encabezado;
+        }
+        td, thead th{
+            border:none;
+        }
+        tbody tr td{
+            padding: .35rem;
+            font-family: $fuente-2;
+            font-size: 1.2rem;
+        }
+    }
+    .bg-horario{
+        background-image: url(../img/bg_horarios.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        min-height: 400px;
+    }
+}
+
+/*Productos*/
+.productos .card{
+    border: none;
+    a{
+        color: $negro;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .card-title{
+        color: $color-encabezado;
+        font-family: $fuente-2;
+        font-size: 1.2rem;
+    }
+    .card-text{
+        color: $negro;
+        font-family: $fuente-2;
+        font-size: .8rem;
+    }
+    .precio{
+        font-family: $fuente-2;
+        color: $gris;
+        font-size: 1.6rem;   
+    }
+}
+
+/*Citas*/
+.citas{
+    background-image: url(../img/bg_citas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: $blanco;
+    font-family: $fuente-2;
+    @media(min-width:992px) {
+        background-size: cover;
+    }
+    h3{
+        font-size: 3.5rem;
+    }
+    p{
+        line-height: 2.6rem;
+        font-size: 1.2rem;
+    }
+    a{
+        background-color: $color-principal;
+        border: 0;
+        padding: 1rem 5rem;
+        border-radius: 0;
+        font-size: 1.2rem;
+        font-family: $fuente-2;
+        &:hover{
+            background-color: #69aca5;
+        }
+    }
+}

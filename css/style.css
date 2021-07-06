@@ -84,6 +84,31 @@ body {
   color: #000000;
 }
 
+/*Hero*/
+.hero {
+  position: relative;
+}
+.hero h2 {
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+  background-color: #8ed3cc;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 2.8rem;
+}
+
+/*Footer*/
+.footer-sitio {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+}
+.footer-sitio .copyright {
+  color: #979797;
+}
+
+/*Principal*/
 /*Carousel*/
 .carousel-caption h3 {
   font-family: "Raleway", sans-serif;
@@ -210,13 +235,36 @@ body {
   background-color: #69aca5;
 }
 
-/*Footer*/
-.footer-sitio {
+/*main*/
+.contenido-principal p {
+  font-size: 1.2rem;
+  list-style: 2.2rem;
   font-family: "Lato", sans-serif;
-  font-size: 1rem;
 }
-.footer-sitio .copyright {
-  color: #979797;
+
+/*sidebar*/
+.sidebar {
+  background-color: #8ed3cc;
+  color: #ffffff;
+}
+.sidebar h2 {
+  font-size: 2.2rem;
+  font-family: "Lato", sans-serif;
+}
+.sidebar .table {
+  border: 3px solid #e082a8;
+}
+.sidebar .table thead {
+  background-color: #e082a8;
+}
+.sidebar .table td,
+.sidebar .table thead th {
+  border: none;
+}
+.sidebar .table tbody tr td {
+  padding: 0.35rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
