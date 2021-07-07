@@ -1,0 +1,38 @@
+@import 'variables';
+
+/*Servicios*/
+#servicios{
+    .card-header{
+        background-color: $color-encabezado;
+        padding: 0 1.25rem;
+        .btn-link{
+            color: $blanco;
+            font-family: $fuente-2;
+            font-size: 1.6rem;
+        }
+    }
+    .card-body{
+        font-family: $fuente-2;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+    }
+}
+
+.sidebars{
+    background-color: $color-principal;
+    color: $blanco;
+    h2 {
+      font-size: 2.2rem;
+      font-family: $fuente-2;
+    }
+    .cupon{
+        border: 3px dashed $blanco;
+        font-family: $fuente-2;
+        .display-4{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}
