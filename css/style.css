@@ -321,5 +321,21 @@ body {
     column-count: 4;
   }
 }
+/*Contacto*/
+.formulario-contacto {
+  background-color: #ffffff;
+  border: 2px solid #979797;
+}
+.formulario-contacto .btn-primary {
+  background-color: #8ed3cc;
+  border: none;
+  border-radius: 0;
+  padding: 1.2rem 5rem;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+}
+.formulario-contacto .btn-primary:hover {
+  background-color: #bde8dd;
+}
 
 /*# sourceMappingURL=style.css.map */
