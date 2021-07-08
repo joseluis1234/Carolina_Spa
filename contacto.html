@@ -73,33 +73,52 @@
         <div class="container pt-4">
             <div class="row no-gutters">
                 <div class="col-12 hero">
-                    <img src="img/producto_01.jpg" alt="Nosotros" class="img-fluid">
-                    <h2 class="text-uppercase d-none d-md-block py-3 px-5">Producto 1</h2>
+                    <img src="img/contacto.jpg" alt="Contacto" class="img-fluid">
+                    <h2 class="text-uppercase d-none d-md-block py-3 px-5">Contacto</h2>
                 </div>
             </div>
         </div>
 
         <div class="container pt-4">
-            <div class="row">
-                <main class="col-md-8 contenido-principal">
+            <div class="row justify-content-center">
+                <main class="col-lg-8 contenido-principal">
                     <h2 class="d-block d-md-none text-uppercase text-center">
-                        Producto 1
+                        Contacto
                     </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis ac risus sit amet condimentum. Duis pellentesque vitae erat a varius. Donec tincidunt, risus sit amet varius tincidunt, turpis arcu ullamcorper ligula, at feugiat turpis massa vitae erat. Nam sit amet posuere urna. Mauris consequat elit in tellus fringilla, in mollis dolor feugiat. Vivamus fringilla eros sed leo maximus rhoncus. Phasellus sit amet vehicula diam. Pellentesque ut lorem ex.</p>
-
-                    <p>
-                        sed accumsan velit. Vestibulum egestas neque eget est pharetra gravida. Vestibulum aliquet, mauris nec blandit pharetra, tellus lorem feugiat dui, non sollicitudin quam neque et lorem. Fusce quis magna sollicitudin, consectetur ante ut, imperdiet turpis. Fusce hendrerit justo ut bibendum semper. Quisque fringilla posuere neque a vulputate.</p>
-
+                    <form class="p-5 mt-5 formulario-contacto needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
+                            <div class="invalid-feedback">
+                                'El nombre es obligatorio'
+                            </div>
+                            <div class="valid-feedback">
+                                Correcto
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">E-mail:</label>
+                            <input type="email" id="email" class="form-control" placeholder="Tu email" required>
+                            <div class="invalid-feedback">
+                                'El email es obligatorio'
+                            </div>
+                            <div class="valid-feedback">
+                                Correcto
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" class="form-control" cols="20" rows="5   " required></textarea>
+                            <div class="invalid-feedback">
+                                'El mensaje es obligatorio'
+                            </div>
+                            <div class="valid-feedback">
+                                Correcto
+                            </div>
+                        </div>
+                        <input type="submit" value="Enviar" class="btn btn-primary text-uppercase">
+                    </form>
                 </main>
-                <aside class="col-lg-4 pt-4 pt-lg-0">
-                    <div class="sidebars pt-3">
-                        <h2 class="text-center text uppercase mt-4">Descripción</h2>
-                        <p class="text-center lead ">Suspendisse vehicula bibendum blandit. Curabitur laoreet malesuada commodo.</p>
-                        <h3 class="text-uppercase text-center mt-5">Precio</h3>
-                        <p class="display-4 text-center pb-5">$25.00</p>
-                    </div>
-                </aside>
             </div>
         </div>
         <!--Fin del contenido principal-->
